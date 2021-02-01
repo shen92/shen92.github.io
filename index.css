@@ -4,16 +4,16 @@ html, body{
     margin: 0;
     font-family: sans-serif;
     user-select: none;
-    color: '#333333'
+    color: #333333
 }
-a {
-    color: '#333333';
-    text-decoration: none;
-}
-a:hover, a:link, a:visited, a:active {
-    color: '#333333';
+a, a:link, a:visited, a:active {
+    color: #0275d8;
     text-decoration: none;
 } 
+a:hover{
+    color: #0275d8;
+    text-decoration: underline;
+}
 .headContainer {
     display: flex;
     flex-direction: column;
