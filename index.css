@@ -6,9 +6,6 @@ html, body{
     user-select: none;
     color: '#333333'
 }
-a:link{
-    color: '#333333'
-}
 .headContainer {
     display: flex;
     flex-direction: column;
