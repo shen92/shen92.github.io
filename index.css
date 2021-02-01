@@ -6,8 +6,8 @@ html, body{
     user-select: none;
     color: '#333333'
 }
-a{
-    color: 
+a:link{
+    color: '#333333'
 }
 .headContainer {
     display: flex;
@@ -15,6 +15,11 @@ a{
     padding: 20px 25px;
 }
 .bodyContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+}
+.bottomContainer {
     display: flex;
     flex-direction: column;
     padding: 20px 25px;
