@@ -71,7 +71,7 @@
                 user-select: none;
             }
             .menuTitleContainer{
-                padding-bottom: 10px;
+                padding-bottom: 13px;
                 background-color: white;
             }
             .menuTitle{
@@ -129,6 +129,22 @@
                 font-size: 16px;
                 width: 285px;
             }
+            .italian{
+                background-image: url('img/italian.jpg');
+                background-size: 330px 250px;
+            }
+            .indian{
+                background-image: url('img/indian.jpg');
+                background-size: 331px 250px;
+            }
+            .japanese{
+                background-image: url('img/japanese.jpg');
+                background-size: 331px 250px;
+            }
+            .desserts{
+                background-image: url('img/desserts.jpg');
+                background-size: 331px 250px;
+            }
         </style>
     </head>
     <body>
@@ -178,14 +194,14 @@
         <div style="height: 30px; background-color: white"></div>
         <div class="floatContainer">
             <div class="subtite">Enjoy the Scenic View!!</div>
-            <div class="reservationButton">Book Your Reservation</div>
+            <button class="reservationButton">Book Your Reservation</button>
         </div>     
         <div class="menuTitleContainer">
             <div class="menuTitle">Explore Our Delicious Cuisines</div>
         </div>
         <div class="menuItem" id="italian">
             <div class="menuItemImageContainer">
-                <img src="img/italian.jpg" alt="italian" class="menuItemImageLeft">
+                <div class="menuItemImageLeft italian"></div>
             </div><!--
             --><div class="menuItemTextContainerRight">
                 <div class="menuTextTitle">Italy's finest:</div>
@@ -198,12 +214,12 @@
                 <div class="menuTextContent">Our dishes are blended with masterful savory spices</div>
             </div><!--
             --><div class="menuItemImageContainer">
-                <img src="img/indian.jpg" alt="indian" class="menuItemImageRight">
+                <div class="menuItemImageRight indian"></div>
             </div>
         </div>
         <div class="menuItem" id="japanese">
             <div class="menuItemImageContainer">
-                <img src="img/japanese.jpg" alt="japanese" class="menuItemImageLeft">
+                <div class="menuItemImageLeft japanese"></div>
             </div><!--
             --><div class="menuItemTextContainerRight">
                 <div class="menuTextTitle">Japanese Cuisine:</div>
@@ -216,7 +232,7 @@
                 <div class="menuTextContent">From Italian Tiramisu to Indian Gulab Jamun</div>
             </div><!--
             --><div class="menuItemImageContainer">
-                <img src="img/desserts.jpg" alt="desserts" class="menuItemImageRight">
+                <div class="menuItemImageRight desserts"></div>
             </div>
         </div>
     </body>
