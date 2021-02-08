@@ -5,23 +5,23 @@
         <style>
             html, body {
                 margin: 0;
-                max-width: 864px;
+                width: 864px;
                 font-family: 'Times New Roman', Times, serif;
             }
             .titleContainer{
-                max-width: 864px;
+                width: 864px;
             }
             .title{
-                display: inline-block;
+                display: block;
                 margin: 14px 0px 14px 320px;
                 color: darkblue;
                 font-family: Georgia, serif;
                 font-size: 30px;
                 font-weight: 600;
+                overflow: hidden;
             }
             .navBar{
-                max-width: 804px;
-                width: 864px;
+                width: 804px;
                 padding: 7px 0px 9px 60px;
                 background-color: antiquewhite;
             }
@@ -130,7 +130,6 @@
     </head>
     <body>
         <div class="fixedImageContainer">
-            <!-- <img class="restaurantImage" src="img/restaurant.jpeg" src="restaurant" width="2000" height="2000"> -->
             <div class="restaurantImage"></div>
         </div>
         <div class="titleContainer">
@@ -163,12 +162,12 @@
                 </a>
             </span>
             <span>
-                <a href="welcome.html" class="navBarButton">
+                <a href="welcome.html" target="_blank" class="navBarButton">
                     About
                 </a>
             </span>
             <span>
-                <a href="welcome.html" class="navBarButton">
+                <a href="welcome.html" target="_blank" class="navBarButton">
                     Contact
                 </a>
             </span>
