@@ -1,7 +1,220 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <title>Home | Menu</title>
+        <style>
+            html, body {
+                margin: 0;
+                max-width: 864px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .titleContainer{
+                max-width: 864px;
+            }
+            .title{
+                display: inline-block;
+                margin: 14px 0px 14px 320px;
+                color: darkblue;
+                font-family: Georgia, serif;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .navBar{
+                max-width: 804px;
+                width: 864px;
+                padding: 7px 0px 9px 60px;
+                background-color: antiquewhite;
+            }
+            .navBarButton{
+                margin-left: 7px;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .fixedImageContainer{
+                padding: 25px 0px 25px 75px;
+                top: 98px;
+                position: fixed;
+                z-index: -100;
+            }
+            .restaurantImage{
+                width: 700px;
+                height: 400px;
+                background-image: url('img/restaurant.jpeg');
+                background-size: 750px 525px;
+                background-position: center bottom;
+            }
+            .floatContainer{
+                height: 450px;
+                border: 1px solid white;
+            }
+            .subtite{
+                margin: 160px 0px 0px 225px;
+                font-size: 42px;
+                font-weight: 600;
+                color:cornsilk;
+            }
+            .reservationButton{
+                display: inline-block;
+                margin-top: 24px;
+                margin-left: 520px;
+                padding: 8px 16px;
+                border: 3px double black;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                font-weight: lighter;
+            }
+            .menuTitleContainer{
+                margin-top: 0;
+                padding-bottom: 10px;
+                background-color: white;
+            }
+            .menuTitle{
+                display: inline-block;
+                margin: 4px 0px 0px 300px ;
+                color: darkmagenta;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .menuItem{
+                background-color: white;
+                padding: 10px 70px 35px;
+                min-width: 864px;
+                max-width: 864px;
+            }
+            .menuItemTextContainerLeft{
+                display: inline-block;
+                width: 350px;
+                height: 190px;
+                padding-top: 80px;
+                vertical-align: top;
+            }
+            .menuItemTextContainerRight{
+                display: inline-block;
+                width: 260px;
+                height: 190px;
+                padding-top: 80px;
+                padding-left: 80px;
+                vertical-align: top;
+            }
+            .menuItemImageContainer{
+                display: inline-block;
+            }
+            .menuItemImageLeft{
+                width: 330px;
+                height: 250px;
+                object-fit: cover;
+                border: 10px solid mistyrose;
+            }
+            .menuItemImageRight{
+                width: 330px;
+                height: 250px;
+                object-fit: cover;
+                border: 10px solid lightblue;
+            }
+            .menuTextTitle{
+                color: #2D4EB1;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .menuTextContent{
+                font-size: 16px;
+                width: 285px;
+            }
+        </style>
+    </head>
     <body>
-        <div>Trojan Café</div>
+        <div class="fixedImageContainer">
+            <!-- <img class="restaurantImage" src="img/restaurant.jpeg" src="restaurant" width="2000" height="2000"> -->
+            <div class="restaurantImage"></div>
+        </div>
+        <div class="titleContainer">
+            <div class="title">Trojan Café</div>
+        </div>
+        <div class="navBar">
+            <span>
+                <a href="hw3.html" class="navBarButton">
+                    Home
+                </a>
+            </span>
+            <span>
+                <a href="#italian" class="navBarButton">
+                    Italian
+                </a>
+            </span>
+            <span>
+                <a href="#indian" class="navBarButton">
+                    Indian
+                </a>
+            </span>
+            <span>
+                <a href="#japanese" class="navBarButton">
+                    Japanese
+                </a>
+            </span>
+            <span>
+                <a href="#desserts" class="navBarButton">
+                    Desserts
+                </a>
+            </span>
+            <span>
+                <a href="welcome.html" class="navBarButton">
+                    About
+                </a>
+            </span>
+            <span>
+                <a href="welcome.html" class="navBarButton">
+                    Contact
+                </a>
+            </span>
+        </div>
+        <div class="floatContainer">
+            <div class="subtite">Enjoy the Scenic View!!</div>
+            <div class="reservationButton">Book Your Reservation</div>
+        </div>     
+        <div class="menuTitleContainer">
+            <div class="menuTitle">Explore Our Delicious Cuisines</div>
+        </div>
+        <div class="menuItem" id="italian">
+            <div class="menuItemImageContainer">
+                <img src="img/italian.jpg" alt="italian" class="menuItemImageLeft">
+            </div><!--
+            --><div class="menuItemTextContainerRight">
+                <div class="menuTextTitle">Italy's finest:</div>
+                <div class="menuTextContent">From our Lasagna to our Protein Penne, we have delicious options for every taste!</div>
+            </div>
+        </div>
+        <div class="menuItem" id="indian">
+            <div class="menuItemTextContainerLeft">
+                <div class="menuTextTitle">India's Flavors:</div>
+                <div class="menuTextContent">Our dished are blended with masterful savory spices</div>
+            </div><!--
+            --><div class="menuItemImageContainer">
+                <img src="img/indian.jpg" alt="indian" class="menuItemImageRight">
+            </div>
+        </div>
+        <div class="menuItem" id="japanese">
+            <div class="menuItemImageContainer">
+                <img src="img/japanese.jpg" alt="japanese" class="menuItemImageLeft">
+            </div><!--
+            --><div class="menuItemTextContainerRight">
+                <div class="menuTextTitle">Japanese Cuisine:</div>
+                <div class="menuTextContent">Delicious dining options from Sake to Sushi</div>
+            </div>
+        </div>
+        <div class="menuItem" id="desserts">
+            <div class="menuItemTextContainerLeft">
+                <div class="menuTextTitle">Desserts:</div>
+                <div class="menuTextContent">From Italian Tiramisu to Indian Gulab Jamun</div>
+            </div><!--
+            --><div class="menuItemImageContainer">
+                <img src="img/desserts.jpg" alt="desserts" class="menuItemImageRight">
+            </div>
+        </div>
     </body>
 </html>
