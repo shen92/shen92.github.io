@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>USC Films API</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        color: black;
+        font-family: sans-serif;
+      }
+
+      .section {
+        margin: 40px 20px 80px 20px;
+      }
+
+      .title {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 27px;
+      }
+
+      .content {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .link {
+        text-decoration: underline;
+        color: #0275d8;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <!-- <div class="section">
+      <div class="title">0. Functionality</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com</a>
+      </div>
+    </div> -->
+
+    <div class="section">
+      <div class="title">1. Multi-Search Endpoint to search for both Movies and TV shows</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/search/:name</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/search/:fast" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/search/:fast</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">2. Trending Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/trending</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/trending" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/trending</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">3. Top-Rated Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/top-rated</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/top-rated" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/top-rated</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">4. Currently playing Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/currently-playing</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/currently-playing" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/currently-playing</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">5. Popular Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/popular</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/popular" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/popular</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">6. Recommended Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/recommended</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/recommended" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/recommended</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">7. Similar Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/similar</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/similar" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/similar</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">8. Movie Video Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/video</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/video" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/video</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">9. Movie Details Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/details</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/details" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/details</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">10. Movie Reviews Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/reviews</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/reviews" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/reviews</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">11. Movie Casts Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/:id/casts</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/casts" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/movie/399566/casts</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">12. Trending TV Shows Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/trending</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/trending" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/trending</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">13. Top-Rated TV shows Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/top-rated</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/top-rated" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/top-rated</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">14. Popular TV shows Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/popular</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/popular" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tvs/popular</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">15. Recommended TV shows Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/:id/recommended</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/recommended" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/recommended</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">16. Similar TV shows Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com//api/v1/tv/:id/similar</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com//api/v1/tv/100/similar" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com//api/v1/tv/100/similar</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">17. Similar Movies Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/:id/video</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/video" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/video</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">18. TV show Details Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/:id/details</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/detailsvideo" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/detailsvideo</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">19. TV show Reviews Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/:id/reviews</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/reviews" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/reviews</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">20. TV show Casts Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/:id/casts</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/casts" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/tv/100/casts</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">21. Cast Details Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/:id/details</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/1663195/details" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/1663195/details</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="title">22. Cast External Ids Endpoint</div>
+      <div class="content">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/:id/external-ids</div class="content">
+      <br>
+      <div class="content">
+        <span>Try it:</span>
+        <a class="link" href="https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/1663195/external-ids" target="_blank">https://api-shen92-uscfilms.wl.r.appspot.com/api/v1/cast/1663195/external-ids</a>
+      </div>
+    </div>
+  </body>
+  
+</html>
