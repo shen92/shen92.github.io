@@ -4,6 +4,44 @@
         <title>CSCI 571</title>
         <link rel="stylesheet" href="index.css">
         <style>
+            html, body{
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                font-family: sans-serif;
+                user-select: none;
+                color: #333333
+            }
+            a, a:link, a:visited, a:active {
+                color: #0275d8;
+                text-decoration: none;
+            } 
+            a:hover{
+                color: #0275d8;
+                text-decoration: underline;
+            }
+            .headContainer {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+            }
+            .bodyContainer {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+            }
+            .bottomContainer {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 25px;
+            }
+            .title {
+                font-size: 40px;
+                font-weight: 500;
+            }
+            .subtitle {
+                font-size: 25px;
+            }
             .linksContainer {
                 padding: 5px 0px;
             }
@@ -109,8 +147,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="hwLink">
-                    <a href="notFound.html">HW 9</a>
+                <br>
+                <div class="note">
+                    <span class="noteTitle">HW 9</span>
+                    <div class="hwLink">
+                        <span>
+                            USC Films: iOS App
+                        </span>
+                    </div>
+                    <div style="margin-top: 2vh;">
+                        <div>
+                            Both GCP and AWS servers can serve data.
+                            <br/>
+                            The USC Films iOS App fetches data from AWS API Server.
+                        </div>
+                        <div style="height: 2vh;"></div>
+                        <div class="apiLabel">Fetch Trending Movies (GCP):</div>
+                        <div>
+                            <a target="_blank" href="https://mobile-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/trending" target="_blank">https://mobile-shen92-uscfilms.wl.r.appspot.com/api/v1/movies/trending</a>
+                        </div>
+                        <div style="height: 1vh;"></div>
+                        <div class="apiLabel">Fetch Trending Movies (AWS):</div>
+                        <div>
+                            <a target="_blank" href="http://express-env.eba-nreuxcka.us-west-1.elasticbeanstalk.com/api/v1/movies/trending" target="_blank">http://express-env.eba-nreuxcka.us-west-1.elasticbeanstalk.com/api/v1/movies/trending</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="hwLink">
                     <a href="notFound.html">HW 10</a>
