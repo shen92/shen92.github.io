@@ -1,0 +1,73 @@
+button.rounded {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+button.rounded:hover {
+    /*Change the color and background-color*/
+    background-color: #FD6FCF;
+    color: black;
+}
+
+/*Any style*/
+.p1Button1 {
+    color: white;
+    background-color: #FC0107;
+    width: 80px;
+    height: 40px;
+}
+
+/*Any style*/
+.p1Button2 {
+    color: white;
+    background-color: #0F80FF;
+    width: 80px;
+    height: 40px;
+}
+
+.Increment {
+    /*Any color*/
+    color: #FFFFFF;
+    /*Any color*/
+    background-color: #FD8008;
+    /*Make the button a square*/
+    width: 80px;
+    height: 80px;
+    border: 2px solid: #555555;
+    /*Change the border radius to give the button rounded corners*/
+    border-radius: 4px;
+}
+
+.counter {
+    color: #800002;
+    font-size: 30px;
+}
+
+.p3Btn {
+    color: #800080;
+    background-color: #FECC66;
+    font-size: 18px;
+}
+
+.p3Para1 {
+    color: #FC0107;
+    font-size: 22px;
+}
+
+.p3Para2 {
+    color: #108001;
+    font-size: 20px;
+}
+
+.p4AddBtn {
+    color: white;
+    background-color: #8000FF;
+    width: 80px;
+    height: 40px;
+}
+
+.p4List {
+    font-size: 18px;
+    color: #0000FF;
+    padding: 30px;
+}
